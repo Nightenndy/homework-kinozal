@@ -216,8 +216,9 @@ a:hover, a:focus {
   margin-left: 45px;
 }
 
-.top-films h2::before {
+.top-films h2:before {
   position: absolute;
+  left: 0;
   width: 30px;
   margin: 10px 0 0 0;
   content: "";
@@ -227,7 +228,7 @@ a:hover, a:focus {
 .top-films h2::after {
   position: absolute;
   width: 100%;
-  margin: 40px 0 0 15px;
+  margin: 35px 0 0 15px;
   content: "";
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
