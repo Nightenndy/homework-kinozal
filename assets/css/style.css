@@ -107,8 +107,24 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.new-films {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .new-films .thumbnail {
   margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-films .thumbnail:hover, .new-films .thumbnail:focus {
+  background-color: #df8a13;
+}
+
+.new-films .thumbnail:hover h3, .new-films .thumbnail:focus h3 {
+  color: #ffffff;
 }
 
 .new-films .row {
@@ -120,6 +136,117 @@ a:hover, a:focus {
   padding-left: 7.5px;
   padding-right: 7.5px;
   margin-bottom: 15px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-films h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin-bottom: 45px;
+  margin-top: -7.5px;
+}
+
+.new-films h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 40px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.new-films .caption {
+  padding: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-films h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-films {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.top-films .thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-films .thumbnail:hover, .top-films .thumbnail:focus {
+  background-color: #df8a13;
+}
+
+.top-films .thumbnail:hover h3, .top-films .thumbnail:focus h3 {
+  color: #ffffff;
+}
+
+.top-films .row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.top-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-films h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+.top-films h2::before {
+  position: absolute;
+  width: 30px;
+  margin: 10px 0 0 0;
+  content: "";
+  border-top: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.top-films h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 40px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.top-films .caption {
+  padding: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-films h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .vertical-slider {

@@ -1,6 +1,19 @@
 .new-films {
+  position: relative;
+  overflow-x: hidden;
+
   .thumbnail {
-    margin-bottom: 0;
+    margin-bottom: 0; 
+    transition: 0.5s; 
+    
+    &:hover,
+    &:focus {
+      background-color: $color-accent;      
+  
+      h3 {
+        color: $color-light;
+      }
+    }
   }
 
   .row {
@@ -11,5 +24,104 @@
     padding-left: $gap / 2;
     padding-right: $gap / 2;
     margin-bottom: $gap;
+    transition: 0.5s;
   }
+
+  h1 {
+    font-family: $font-header;
+    font-size: 3rem;
+    margin-bottom: $gap * 3;
+    margin-top: -$gap / 2;
+  }
+
+  h1::after {
+    position: absolute;
+    width: 100%;
+    margin: 40px 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba($color-accent, 0.7); 
+  }  
+
+  .caption {
+    padding: 9px;
+    transition: 0.5s;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;  
+    transition: 0.5s;  
+  }  
 }
+
+.top-films {
+  position: relative;
+  overflow-x: hidden;
+
+  .thumbnail {
+    margin-bottom: 0; 
+    transition: 0.5s; 
+    
+    &:hover,
+    &:focus {
+      background-color: $color-accent;      
+  
+      h3 {
+        color: $color-light;
+      }
+    }
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+    transition: 0.5s;
+  }
+
+  h2 {
+    font-family: $font-header;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: $gap * 3;
+    margin-top: $gap * 4;
+    margin-left: $gap * 3;
+  }
+
+  h2::before {
+    position: absolute;
+    width: $gap * 2;
+    margin: 10px 0 0 0;
+    content: "";
+    border-top: 3px solid rgba($color-accent, 0.7);
+  }
+
+  h2::after {
+    position: absolute;
+    width: 100%;
+    margin: 40px 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba($color-accent, 0.7); 
+  }  
+
+  .caption {
+    padding: 9px;
+    transition: 0.5s;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;  
+    transition: 0.5s;  
+  }  
+}
+
+
