@@ -147,7 +147,8 @@
           background-color: $color-accent;
           color: $color-light;
         }
-      }    
+      } 
+
   }
 
   .thumbnail {
@@ -165,7 +166,6 @@
     padding-left: $gap;
     padding-right: $gap;
   }
-}
 
   .col-sm-8 {
     padding-left: $gap;
@@ -218,7 +218,9 @@
     margin-bottom: $gap * 2;
     transition: 0.5s;
   }
+}
 
+  
 
 
 
