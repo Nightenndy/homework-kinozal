@@ -82,6 +82,7 @@
       }
     }
   }
+
   .row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
@@ -132,9 +133,19 @@
     font-weight: bold;
     margin: 0;  
     transition: 0.5s;
-  } 
+  }  
 }
-
+.panel-body {
+  .list-group {
+    .top-films-item {
+      border-top: none;
+      margin-top: 0;
+      margin-right: -1px;
+      margin-bottom: -1px;
+      margin-left: -1px;
+    }
+  }
+}
 .film-news {  
   position: relative;
   overflow-x: hidden;

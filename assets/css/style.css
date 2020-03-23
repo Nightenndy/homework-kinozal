@@ -265,6 +265,14 @@ a:hover, a:focus {
   transition: 0.5s;
 }
 
+.panel-body .list-group .top-films-item {
+  border-top: none;
+  margin-top: 0;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+
 .film-news {
   position: relative;
   overflow-x: hidden;
@@ -434,10 +442,22 @@ li {
   color: #ffffff;
 }
 
+.site-search {
+  margin-bottom: 45px;
+}
+
+.user-login {
+  margin-bottom: 60px;
+}
+
 .film-info {
   position: relative;
   overflow-x: hidden;
   font-size: 1.2em;
+}
+
+.film-info .embed-responsive-item {
+  border-radius: 4px 4px 0 0;
 }
 
 .film-info .left-sidebar {
@@ -454,7 +474,7 @@ li {
 .film-info h1::after {
   position: absolute;
   width: 100%;
-  margin: 40px 0 0 15px;
+  margin: 0.85em 0 0 15px;
   content: "";
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -462,6 +482,7 @@ li {
 .film-info .badge {
   display: inline-block;
   min-width: 10px;
+  margin-right: 10px;
   padding: 3px 7px;
   font-size: 12px;
   font-weight: 700;
@@ -495,7 +516,7 @@ li {
   position: absolute;
   left: 0;
   width: 30px;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   content: "";
   border-top: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -503,7 +524,7 @@ li {
 .film-description h2::after {
   position: absolute;
   width: 100%;
-  margin: 35px 0 0 15px;
+  margin: 0.85em 0 0 15px;
   content: "";
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -530,7 +551,7 @@ li {
   position: absolute;
   left: 0;
   width: 30px;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   content: "";
   border-top: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -538,7 +559,7 @@ li {
 .film-comments h2::after {
   position: absolute;
   width: 100%;
-  margin: 35px 0 0 15px;
+  margin: 0.85em 0 0 15px;
   content: "";
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -570,7 +591,7 @@ li {
   position: absolute;
   left: 0;
   width: 30px;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   content: "";
   border-top: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -578,7 +599,7 @@ li {
 .film-comment-form h2::after {
   position: absolute;
   width: 100%;
-  margin: 35px 0 0 15px;
+  margin: 0.85em 0 0 15px;
   content: "";
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
@@ -779,5 +800,17 @@ li {
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
+  }
+  .film-info h1 {
+    font-size: 2rem;
+  }
+  .film-description h2 {
+    font-size: 1.75rem;
+  }
+  .film-comments h2 {
+    font-size: 1.75rem;
+  }
+  .film-comment-form h2 {
+    font-size: 1.75rem;
   }
 }
