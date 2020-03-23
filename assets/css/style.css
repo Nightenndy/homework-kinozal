@@ -408,6 +408,22 @@ li {
   list-style-type: none;
 }
 
+.footer-first a:hover, .footer-first a:focus {
+  color: #ffffff;
+}
+
+.footer-second a:hover, .footer-second a:focus {
+  color: #ffffff;
+}
+
+.footer-third a:hover, .footer-third a:focus {
+  color: #ffffff;
+}
+
+.footer-fourth a:hover, .footer-fourth a:focus {
+  color: #ffffff;
+}
+
 .footer-bottom-item {
   text-align: center;
   margin: 20px 0;

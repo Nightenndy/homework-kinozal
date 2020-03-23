@@ -305,7 +305,34 @@ ul {
 li {
   list-style-type: none;
 }
+.footer-first a {
 
+  &:hover,
+  &:focus {
+    color: $color-light;
+  }
+}
+.footer-second a {  
+
+  &:hover,
+  &:focus {
+    color: $color-light;
+  }
+}
+.footer-third a { 
+
+  &:hover,
+  &:focus {
+    color: $color-light;
+  }
+}
+.footer-fourth  a {
+
+  &:hover,
+  &:focus {
+    color: $color-light;
+  }
+}
 .footer-bottom-item {
   text-align: center;
   margin: 20px 0;
