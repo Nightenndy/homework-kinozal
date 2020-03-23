@@ -804,6 +804,10 @@ li {
   .film-info h1 {
     font-size: 2rem;
   }
+  .film-info .film-info__well {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
   .film-description h2 {
     font-size: 1.75rem;
   }
@@ -812,5 +816,12 @@ li {
   }
   .film-comment-form h2 {
     font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 339.8px) {
+  .film-info .film-info__well {
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }

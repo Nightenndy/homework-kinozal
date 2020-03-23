@@ -39,6 +39,17 @@
     border-bottom: 3px solid rgba($color-accent, 0.7);
   }
 
+  .film-info__well {
+    @include xs {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+    
+    @include xxs {
+      padding-left: 19px;
+      padding-right: 19px;
+    }
+  }
   .badge {
     display: inline-block;
     min-width: 10px;
