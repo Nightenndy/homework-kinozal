@@ -107,6 +107,14 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.main {
+  margin-bottom: 60px;
+}
+
+.left-sidebar {
+  margin-bottom: 60px;
+}
+
 .new-films {
   position: relative;
   overflow-x: hidden;
@@ -163,7 +171,11 @@ a:hover, a:focus {
   transition: 0.5s;
 }
 
-.new-films h3 {
+.new-films .new-film-item__title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
@@ -239,7 +251,11 @@ a:hover, a:focus {
   transition: 0.5s;
 }
 
-.top-films h3 {
+.top-films .top-film-item__title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
@@ -353,6 +369,214 @@ a:hover, a:focus {
 .footer {
   padding-top: 45px;
   background-color: #232323;
+}
+
+.footer a {
+  color: #777777;
+}
+
+.footer .footer-container-fluid {
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer .footer-container-fluid .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.footer .footer-container-fluid .row .footer__container__container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footer-bottom-item {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-bottom-item a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.film-info {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 1.2em;
+}
+
+.film-info .left-sidebar {
+  margin-bottom: 60px;
+}
+
+.film-info h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin-bottom: 45px;
+  margin-top: -7.5px;
+}
+
+.film-info h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 40px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-info .badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+}
+
+.film-info .film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-description {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.film-description h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+.film-description h2:before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 10px 0 0 0;
+  content: "";
+  border-top: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-description h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 35px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-description .well {
+  padding: 19px;
+  margin-bottom: 20px;
+}
+
+.film-comments {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.film-comments h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+.film-comments h2:before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 10px 0 0 0;
+  content: "";
+  border-top: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-comments h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 35px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-comments .panel {
+  margin-bottom: 30px;
+}
+
+.film-comments .panel .panel-head {
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #df8a13;
+}
+
+.film-comment-form {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.film-comment-form h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+.film-comment-form h2:before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 10px 0 0 0;
+  content: "";
+  border-top: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-comment-form h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 35px 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(223, 138, 19, 0.7);
+}
+
+.film-comment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.film-comment-form .form-group .form-control {
+  padding: 10px 16px;
+}
+
+.btn {
+  float: right;
 }
 
 .vertical-slider {
@@ -490,6 +714,33 @@ a:hover, a:focus {
   }
 }
 
+@media (min-width: 992px) {
+  .footer .footer-container-fluid .row .footer__container {
+    margin-left: 27px;
+    margin-right: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .footer-container-fluid .row .footer__container {
+    margin-left: 135px;
+    margin-right: 135px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .footer .footer-container-fluid .row .footer__container {
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -499,6 +750,12 @@ a:hover, a:focus {
   }
   .navbar-right {
     margin-top: 0;
+  }
+  .footer .footer-container-fluid .row .footer__container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

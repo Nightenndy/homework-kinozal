@@ -1,3 +1,10 @@
+.main {
+  margin-bottom: 60px;
+}
+
+.left-sidebar {
+  margin-bottom: 60px;
+}
 .new-films {
   position: relative;
   overflow-x: hidden;
@@ -47,15 +54,17 @@
     transition: 0.5s;
   }
 
-  h3 {
+  .new-film-item__title {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
     margin: 0;  
-    transition: 0.5s;  
+    transition: 0.5s;
   }  
 }
-
 .top-films {
   position: relative;
   overflow-x: hidden;
@@ -73,7 +82,6 @@
       }
     }
   }
-
   .row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
@@ -115,13 +123,16 @@
     transition: 0.5s;
   }
 
-  h3 {
+  .top-film-item__title {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
     margin: 0;  
-    transition: 0.5s;  
-  }  
+    transition: 0.5s;
+  } 
 }
 
 .film-news {  
@@ -221,11 +232,86 @@
 }
 
 .footer {
-  padding-top: $gap * 3;
+  padding-top: 45px;
   background-color: $color-dark;
+
+  a {
+    color: #777777;
+  }
+
+  .footer-container-fluid {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .row {
+      margin-left: -15px;
+      margin-right: -15px;
+
+      .footer__container {
+
+        @include lg-min {
+          margin-left: 135px;
+          margin-right: 135px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include md-min {
+          margin-left: 27px;
+          margin-right: 27px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include md {
+          margin-left: 9px;
+          margin-right: 9px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include sm {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        
+        
+
+        &__container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }  
 }
 
-  
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+ul {
+  margin-bottom: 10px;
+  padding: 0;
+}
 
+li {
+  list-style-type: none;
+}
 
+.footer-bottom-item {
+  text-align: center;
+  margin: 20px 0;
+
+  a {
+    font-weight: 700;
+    color: $color-light;
+  }
+}
