@@ -40,20 +40,12 @@
   }
 
   .film-info__well {
-    @include xs {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-    
-    @include xxs {
-      padding-left: 19px;
-      padding-right: 19px;
-    }
+    padding-left: 19px;
+    padding-right: 19px;
   }
   .badge {
     display: inline-block;
     min-width: 10px;
-    margin-right: 10px;
     padding: 3px 7px;
     font-size: 12px;
     font-weight: 700;
@@ -64,6 +56,10 @@
     vertical-align: middle;
     background-color: #777;
     border-radius: 10px;
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+
    }
     .film-info__badge {
     font-size: 0.8em;

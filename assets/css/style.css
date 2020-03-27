@@ -479,10 +479,14 @@ li {
   border-bottom: 3px solid rgba(223, 138, 19, 0.7);
 }
 
+.film-info .film-info__well {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
 .film-info .badge {
   display: inline-block;
   min-width: 10px;
-  margin-right: 10px;
   padding: 3px 7px;
   font-size: 12px;
   font-weight: 700;
@@ -493,6 +497,10 @@ li {
   vertical-align: middle;
   background-color: #777;
   border-radius: 10px;
+}
+
+.film-info .badge:not(:last-child) {
+  margin-right: 3%;
 }
 
 .film-info .film-info__badge {
@@ -804,10 +812,6 @@ li {
   .film-info h1 {
     font-size: 2rem;
   }
-  .film-info .film-info__well {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
   .film-description h2 {
     font-size: 1.75rem;
   }
@@ -816,12 +820,5 @@ li {
   }
   .film-comment-form h2 {
     font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 339.8px) {
-  .film-info .film-info__well {
-    padding-left: 19px;
-    padding-right: 19px;
   }
 }
