@@ -484,6 +484,10 @@ li {
   padding-right: 19px;
 }
 
+.film-info .film-info__wrapper {
+  white-space: nowrap;
+}
+
 .film-info .badge {
   display: inline-block;
   min-width: 10px;
