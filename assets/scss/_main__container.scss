@@ -1,0 +1,28 @@
+.main__container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    @include xl-min {
+        margin-left: 230px;
+        margin-right: 230px;
+    }
+
+    @include lg-min {
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
+    @include lg-md {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    @include md {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

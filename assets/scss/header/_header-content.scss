@@ -1,0 +1,307 @@
+.header-content {    
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+
+    @include lg-min {
+        min-width: 1340px;
+        height: 700px;
+    }
+
+    @include lg-md {
+        width: 768px;
+        height: 500px;
+    }
+
+    @include sm {
+        display: none;
+    }
+
+    .sun {
+        position: absolute;
+        top: -20%;
+        left: 15px;
+        height: 700px;
+        width: 700px;
+
+        transition-delay: 5s;
+        animation: spin 350s infinite linear;
+
+        @keyframes spin {
+            from {transform: rotate(0) scale(1);}
+            to {transform: rotate(360deg) scale(1.1);}
+        }
+
+        @include lg-md {
+            height: 300px;
+            width: 300px;
+            top: -20px;
+            left: 10px;
+        }
+    }
+
+    .venus {
+        position: absolute;
+        top: 60%;
+        left: 29%;
+        height: 112px;
+        width: 81px;
+
+        animation: fly 3s linear;
+
+        @keyframes fly {
+            from {
+                animation-delay: 6s;
+                top: 45%;
+                left: 38%;
+                transform: scale(0.1) rotate(-120deg);
+            }
+
+            to {
+                top: 60%;
+                left: 29%;
+                transform: scale(1) rotate(0);
+            }
+        }
+
+        @include lg-md {
+            height: 55px;
+            width: 41px;
+            top: 40%;
+            left: 200px;
+        }
+
+        @keyframes fly {
+            from {
+                animation-delay: 6s;
+                top: 30%;
+                left: 38%;
+                transform: scale(0.1) rotate(-120deg);
+            }
+
+            to {
+                top: 40%;
+                left: 200px;
+                transform: scale(1) rotate(0);
+            }
+        }
+    }
+
+    .earth {
+        position: absolute;
+        top: 40%;
+        right: 20%;
+        height: 277px;
+        width: 284px;
+
+        animation: fly-earth 4s linear;
+
+        @keyframes fly-earth {
+            from {
+                animation-delay: 6s;
+                top: 25%;
+                right: 5%;
+                transform: scale(0.01);
+            }
+
+            to {
+                top: 40%;
+                right: 20%;;
+                transform: scale(1);
+            }
+        }
+
+    }
+
+    .moon {
+        position: absolute;
+        top: 67%;
+        right: 23%;
+        height: 59px;
+        width: 51px ;
+        opacity: 1;
+
+        animation: fly-moon 6s linear;
+
+        @keyframes fly-moon {
+            from {
+                opacity: 0.1;
+                transform: scale(0.1);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+    }
+
+    .mars {
+        position: absolute;
+        bottom: 8%;
+        right: 6%;
+        width: 60px;
+        height: 60px;
+
+        animation: mars 5s linear;
+
+        @keyframes mars {
+            from {
+                transform: scale(0.01);
+            }
+            
+            to {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .jupiter {
+        position: absolute;
+        top: 5%;
+        right: 7%;
+        height: 55px;
+        width: 55px;
+
+        animation: jupiter 4s linear;
+
+        @keyframes jupiter {
+            from {
+                transform: scale(0.1);
+                opacity: 0.01;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .p-golo {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+
+        height: 60px;
+        width: 40px;
+
+        animation: p-logo 4s linear;
+
+        @keyframes p-logo {
+            from {
+                left: 15%;
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                left: 35%;
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .romo-logo {
+        position: absolute;
+        top: 40%;
+        left: 37.5%;
+
+        height: 60px;
+        width: 210px;
+
+        animation: romo-logo 4s linear;
+
+        @keyframes romo-logo {
+            from {
+                top: 20%;
+                opacity: 0;
+            }
+
+            to {
+                top: 40%;
+                opacity: 1;
+            }
+        }
+    }
+
+    .s-logo {
+        position: absolute;
+        top: 40%;
+        left: 52%;
+
+        height: 60px;
+        width: 40px;
+
+        animation: s-logo 4s linear;
+
+        @keyframes s-logo {
+            from {
+                top: 60%;
+                opacity: 0;
+            }
+
+            to {
+                top: 40%;
+                opacity: 1;
+            }
+        }
+    }
+
+    .tar-logo {
+        position: absolute;
+        top: 40%;
+        right: 36%;
+
+        height: 60px;
+        width: 180px;
+
+        animation: tar-logo 4s linear;
+
+        @keyframes tar-logo {
+            from {
+                right: 15%;
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                right: 36%;
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .promo-tekst {
+        font-family: $font-header;
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0.4em;
+
+        position: absolute;
+        top: 50%;
+        left: 40%;
+
+        animation: promo-tekst 8s linear;
+
+        @keyframes promo-tekst {
+            from {
+                top: 60%;
+                opacity: 0;
+                transform: scale(0.1);
+            }
+
+            to {
+                top: 50%;
+                opacity: 1;
+                transform: scale(1);
+            }
+            
+        }
+    }
+
+
+}
